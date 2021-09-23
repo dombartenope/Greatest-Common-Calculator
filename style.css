@@ -1,13 +1,19 @@
+body {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='250' preserveAspectRatio='none' viewBox='0 0 1440 250'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1015%26quot%3b)' fill='none'%3e%3crect width='1440' height='250' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M45 250L295 0L551.5 0L301.5 250z' fill='url(%23SvgjsLinearGradient1016)'%3e%3c/path%3e%3cpath d='M253.60000000000002 250L503.6 0L730.1 0L480.1 250z' fill='url(%23SvgjsLinearGradient1016)'%3e%3c/path%3e%3cpath d='M511.20000000000005 250L761.2 0L911.2 0L661.2 250z' fill='url(%23SvgjsLinearGradient1016)'%3e%3c/path%3e%3cpath d='M737.8000000000001 250L987.8000000000001 0L1271.3000000000002 0L1021.3000000000001 250z' fill='url(%23SvgjsLinearGradient1016)'%3e%3c/path%3e%3cpath d='M1426 250L1176 0L918 0L1168 250z' fill='url(%23SvgjsLinearGradient1017)'%3e%3c/path%3e%3cpath d='M1184.4 250L934.4000000000001 0L736.4000000000001 0L986.4000000000001 250z' fill='url(%23SvgjsLinearGradient1017)'%3e%3c/path%3e%3cpath d='M926.8 250L676.8 0L564.3 0L814.3 250z' fill='url(%23SvgjsLinearGradient1017)'%3e%3c/path%3e%3cpath d='M700.1999999999999 250L450.19999999999993 0L295.69999999999993 0L545.6999999999999 250z' fill='url(%23SvgjsLinearGradient1017)'%3e%3c/path%3e%3cpath d='M1248.6405942736878 250L1440 58.64059427368787L1440 250z' fill='url(%23SvgjsLinearGradient1016)'%3e%3c/path%3e%3cpath d='M0 250L191.35940572631213 250L 0 58.64059427368787z' fill='url(%23SvgjsLinearGradient1017)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1015'%3e%3crect width='1440' height='250' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1016'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1017'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 h1 {
-    border-bottom: .5rem solid black;
-    color: red;
+    color: #fff;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -18,22 +24,32 @@ h1 {
     grid-template-columns: 2fr 1fr;
     justify-content: center;
     align-items: center;
-    width: 60%
+    width: 60%;
 }
 
 input {
     width: 100%;
     height: 2rem;
+    border-radius: 5px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     grid-column: span 1/2;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #fff;
+    font-weight: bold;
 }
 
 button {
     grid-column: 2;
     grid-row: span 2/3;
     height: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: capitalize;
+    font-size: 2rem;
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .result-container {
@@ -47,6 +63,9 @@ button {
     border: 1px solid black;
     box-shadow: 5px 5px 15px 5px #000000;
     text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 h2 {

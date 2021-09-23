@@ -12,8 +12,9 @@
         <h1>Find the Greatest Common Factor!</h1>
     </header>
     <div class="inputs">
-        <input type="number" class="a-input">
-        <input type="number" class="b-input">
+        <!-- "oninput" stops user from entering a negative number along with "min" -->
+        <input type="number" class="a-input" min=0 oninput="validity.valid||(value='');">
+        <input type="number" class="b-input" min= 0 oninput="validity.valid||(value='');">
         <button>Calculate</button>
     </div>
 

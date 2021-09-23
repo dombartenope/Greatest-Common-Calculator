@@ -1,9 +1,10 @@
-
+//Select html elements to display result after function call
 const firstInput = document.querySelector('.a-input');
 const secondInput = document.querySelector('.b-input');
 const button = document.querySelector('button');
 const resultText = document.querySelector('.result');
 
+//Finds the greatest(highest) common factor of two given numbers
 const findTheHCF = (a, b) => {
     let result;
     //check if params are equal, and if so, set result to a and b
